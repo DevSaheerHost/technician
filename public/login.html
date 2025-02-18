@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <header class="main-header">
+        <span class="logo"> Brycen's Login Page </span>
+        <span>
+            <nav class="main-nav">
+                <ul>
+                    <li class="home" style="display:none;">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="logged-in" stype="display:none;">
+                        <a href="edit.html">Edit Account</a>
+                    </li>
+                    <li class="logged-out" style="display: none;">
+                        <a href="signup.html">Sign up</a>
+                    </li>
+                    <li class="logged-out" style="display: none;">
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li class="logged-in" style="display: none;">
+                        <a href="#" id="logout">Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </span>
+    </header>
+    <section class="container">
+        <h1>Login</h1>
+        <form id="login-form">
+            <label for="login-email">
+                <div>Email: </div>
+                <input type="email" id="login-email" placeholder="Enter your Email">
+            </label>
+            <label for="login-password">
+                <div>Password: </div>
+                <input type="password" id="login-password" placeholder="Enter your Password">
+            </label>
+            <label for="submit">
+                <div><input type="submit" id="submit" value="Login"></div>
+            </label>
+        </form>
+    </section>
+    <footer>
+        <div>&copy Brycen Ong 2020</div>
+    </footer>
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCKypOhR-Hw9LxV1k8O7EeGdlXRFR-Ur5Y",
+    authDomain: "login-page-df632.firebaseapp.com",
+    databaseURL: "https://login-page-df632.firebaseio.com",
+    projectId: "login-page-df632",
+    // storageBucket: "login-page-df632.appspot.com",
+    // messagingSenderId: "524776418200",
+    appId: "1:524776418200:web:a36256adfdc785773999ed",
+    measurementId: "G-0Y27NT5MMT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
+<script src="auth.js"></script>
+<!-- <script src="index.js"></script> -->
+</html>

@@ -1,66 +1,637 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="https://res.cloudinary.com/saheerbabu/image/upload/f_auto,q_auto/v1/webDevelopment/EasyRecharge/UserSection/eq3vmdt1kytj3wwayuwa" type="image/x-icon" />
-
-<title>Free Recharge</title> 
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="https://res.cloudinary.com/saheerbabu/raw/upload/v1/webDevelopment/EasyRecharge/UserSection/z32azr25kmokxiqcwwhd.css">
-</head>
-
-<body>
-  <!-- Project -->
-  <div class="main">
-    <nav class="header">
-      <h1 class="heading"><!-- Recharge --></h1>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-    <div class="content">
-      <div class="titleLayout">
-        <h3>MOBILE</h3>
-      </div>
-      <div class="errorLayout">
-        
-      <label class="error">*</label>
-      </div>
-      
-      <div class="inputLayout">
-        <div class="inputNameSection">
-          <input type="text" name="firstName" id="fName" class="fName" placeholder="First Name">
-          <input type="text" name="LastName" id="lName" class="lName" placeholder="Last Name">
-        </div>
-        
-        <input type="number" name="number" id="number" class="number" placeholder="Mobile Number">
-        <select name="select" id="carrerSelect">
-          <option value="select">SELECT</option>
-          <option value="airtel">AIRTEL</option>
-          <option value="bsnl">BNSL</option>
-          <option value="idea">IDEA</option>
-          <option value="jio">JIO</option>
-        </select>
-        
-     
-        <input type="number" name="amount" class="amount" id="amount" value="" disabled placeholder="Amount">
-      </div>
-      <div class="popup">
-  <span class="popuptext" id="myPopup">Check The Box!</span>
-</div>
+    
+    <meta disabled class="alternate-theme" title="color-1" name="theme-color" content="#CE1839" />
+    <meta disabled class="alternate-theme" title="color-2" name="theme-color" content="#FA5B0F" />
+    <meta disabled class="alternate-theme" title="color-3" name="theme-color" content="#37B182" />
+    <meta disabled class="alternate-theme" title="color-4" name="theme-color" content="#1854B4" />
+    <meta disabled class="alternate-theme" title="color-5" name="theme-color" content="#F021B2" />
+    
+    <meta name="application-name" content="Portfolio" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portfolio</title>
 
-      <span class="termsLayout"><label for="agreeBox" class="agreeLabel"> <input type="checkbox" name="agree" id="agreeBox">I Agree The <a href="https://saheer-babu-hosted-com.on.drv.tw/WebHosting/www.EasyRecharg.in/UserSection/terms.html" class="terms">Terms</a> and <a href="##" class="conditions">Conditions</a></label></span>
-      <div class="next_button">
-        <label>Proceed to Next Step</label>
+    <!-- HTML -->
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./css/skins/color-1.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- Style Switcher -->
+    <link
+      rel="stylesheet"
+      href="./css/skins/color-1.css"
+      type="text/css"
+      title="color-1"
+      class="alternate-style"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/skins/color-2.css"
+      type="text/css"
+      title="color-2"
+      class="alternate-style"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/skins/color-3.css"
+      type="text/css"
+      title="color-3"
+      class="alternate-style"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/skins/color-4.css"
+      type="text/css"
+      title="color-4"
+      class="alternate-style"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="./css/skins/color-5.css"
+      type="text/css"
+      title="color-5"
+      class="alternate-style"
+      disabled
+    />
+    <link rel="stylesheet" href="./css/style-switcher.css" />
+  </head>
+
+  <body>
+    <!-- main container start -->
+
+    <div class="main-container">
+      <!-- asaid start -->
+
+      <div class="asaid">
+        <div class="logo">
+          <a href="#"><span>A</span>tlas</a>
+        </div>
+        <div class="nav-togler">
+          <span></span>
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="#home" class="active"> <i class="fa fa-home"></i>Home </a>
+          </li>
+
+          <li>
+            <a href="#about"> <i class="fa fa-user"></i>About </a>
+          </li>
+
+          <li>
+            <a href="#services"> <i class="fa fa-list"></i>Service </a>
+          </li>
+
+          <li>
+            <a href="#portfolio"> <i class="fa fa-briefcase"></i>Portfolio </a>
+          </li>
+          <li>
+            <a href="#contact"> <i class="fa fa-comments"></i>Contact </a>
+          </li>
+        </ul>
+      </div>
+      <!-- asaid end -->
+
+      <!-- Main Content Start -->
+      <div class="main-content">
+        <!-- Home section Start -->
+        <section class="home section" id="home">
+          <div class="container">
+            <div class="row">
+              <div class="home-info padd-15">
+                <h3 class="hello">
+                  Hello, my name is <span class="name">Saheer Babu</span>
+                </h3>
+                <h3 class="my-profession">
+                  I'm a <span class="typing"></span>
+                </h3>
+                <p>
+                  I’m a Smartphone Guru with over 2 years of hands-on experience. My expertise includes repairing 1000+ cracked screens, diagnosing hardware/software issues, and providing reliable solutions for all smartphone problems—and much more!
+                </p>
+                <a href="#contact" class="btn hire-me">Hire Me</a>
+              </div>
+              <div class="home-img padd-15">
+                <img src="./images/hero.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Home section End -->
+        <!-- About section Start -->
+        <section class="about section" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>About Me</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="about-content padd-15">
+                <div class="row">
+                  <div class="about-text padd-15">
+                    <h3>I'm Saheer Babu and <span>Smartphone Technician</span></h3>
+                    <p>
+                     I'm a dedicated smartphone technician skilled in diagnosing and repairing mobile devices. With expertise in hardware and software troubleshooting, I focus on delivering efficient, high-quality service that keeps devices performing at their best. Constantly learning and adapting to new technologies, I blend precision with innovation in every repair. Let's keep your devices running smoothly!
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="personal-info padd-15">
+                    <div class="row">
+                      <div class="info-item padd-15">
+                        <p>Birthday : <span>27 Feb 2004</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Age : <span>21</span></p>
+                      </div>
+
+                      <div class="info-item padd-15">
+                        <p>Website : <span>www.google.com</span></p>
+                      </div>
+
+                      <div class="info-item padd-15">
+                        <p>Email : <span>sheerbabu549@gmail.com</span></p>
+                      </div>
+
+                      <div class="info-item padd-15">
+                        <p>Degree : <span>CS</span></p>
+                      </div>
+
+                      <div class="info-item padd-15">
+                        <p>Phone : <span>+91 7592949476</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>City : <span>Malappuram</span></p>
+                      </div>
+
+                      <div class="info-item padd-15">
+                        <p>Freelance : <span>Available</span></p>
+                      </div>
+                      <!--  -->
+                    </div>
+                    <div class="row">
+                      <div class="buttons padd-15">
+                        <a href="#" class="btn">Download CV</a>
+                        <a href="#contact" class="btn haire-me">Haire Me</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="skills padd-15">
+                    <div class="row">
+                      <div class="skill-item padd-15">
+                        <h5>Software</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 76%"></div>
+                          <div class="skill-percent">76%</div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item padd-15">
+                        <h5>Normal work</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 93%"></div>
+                          <div class="skill-percent">93%</div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item padd-15">
+                        <h5>Board work</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 82%"></div>
+                          <div class="skill-percent">82%</div>
+                        </div>
+                      </div>
+
+                      <div class="skill-item padd-15">
+                        <h5>Chip level</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 49%"></div>
+                          <div class="skill-percent">49%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!--  -->
+                <div class="row">
+                  <div class="education padd-15">
+                    <h3 class="title">Education</h3>
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-dark">
+                          <!-- Time line item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2020
+                            </h3>
+                            <h4 class="timeline-title">
+                              SSLC
+                            </h4>
+                            <p class="timeline-text">
+                              I completed SSLC and chose not to pursue higher education because of my strong interest in website development, focusing on coding and design skills.
+                            </p>
+                          </div>
+
+
+
+              
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="experience padd-15">
+                    <h3 class="title">Experience</h3>
+
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-dark">
+                          <!-- Time line item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>Feb/22 - jan/23
+                            </h3>
+                            <h4 class="timeline-title">
+                              Start Normal works
+                            </h4>
+                            <p class="timeline-text">
+                         Experienced in smartphone repair, software troubleshooting, screen replacement, battery replacement, speaker and mic repair, charging port fixes, and basic maintenance services.     
+                            </p>
+                          </div>
+
+                          <!-- Time line item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>Jan/23 - Apr/23
+                            </h3>
+                            <h4 class="timeline-title">
+                              First touch with Fastboot
+                            </h4>
+                            <p class="timeline-text">
+                              Unlocking bootloader, flashing firmware, erasing data, sideloading updates, booting recovery, checking device status, and troubleshooting boot issues.
+                            </p>
+                          </div>
+
+                          <!-- Time line item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>Aug/23 - Des/24
+                            </h3>
+                            <h4 class="timeline-title">
+                              Smartphone Repair & Software Servicing Expertise
+                            </h4>
+                            <p class="timeline-text">
+                              Advanced smartphone repair: motherboard diagnostics, chip reballing, IC replacement, jumper wire fixes, BIOS flashing, eMMC programming, short circuit detection, and signal troubleshooting.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- About section End -->
+        <!-- Service section Start -->
+        <section class="service section" id="services">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Servieces</h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- Service item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-mobile-alt"></i>
+                  </div>
+                  <h4>App Development</h4>
+                  <p>
+                    Intuitive, high-performance mobile app development for seamless user experiences.
+                  </p>
+                </div>
+              </div>
+              <!-- Service item End -->
+              <!-- Service item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-laptop-code"></i>
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>
+                    Modern, responsive, and user-friendly web design for seamless digital experiences.
+                  </p>
+                </div>
+              </div>
+              <!-- Service item End -->
+
+              <!-- Service item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-palette"></i>
+                  </div>
+                  <h4>UI UX</h4>
+                  <p>
+                    Engaging, user-centric UI/UX design for intuitive digital experiences.
+                  </p>
+                </div>
+              </div>
+              <!-- Service item End -->
+
+              <!-- Service item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-code"></i>
+                  </div>
+                  <h4>Deep Coding</h4>
+                  <p>
+                    Efficient, optimized, and scalable coding solutions for complex digital systems.
+                  </p>
+                </div>
+              </div>
+              <!-- Service item End -->
+              <!-- Service item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <h4>Research</h4>
+                  <p>
+                    Thorough, data-driven research for informed and innovative solutions.
+                  </p>
+                </div>
+              </div>
+              <!-- Service item End -->
+              <!-- Service item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-bullhorn"></i>
+                  </div>
+                  <h4>Web Hosting</h4>
+                  <p>
+                    Reliable and secure website hosting for seamless online presence.
+                  </p>
+                </div>
+                
+              </div>
+              <!-- Service item End -->
+            </div>
+          </div>
+        </section>
+        <!-- Service section End -->
+        <!-- Portfolio section Start -->
+        <section class="portfolio section" id="portfolio">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Portfolio</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="portfolio-heading padd-15">
+                <h2>My Last Projcts :</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Portfolio Item Start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="https://t3.ftcdn.net/jpg/06/79/58/68/360_F_679586848_lhUJxJruu2o4bdHvBqteGZEHnifXCr66.webp" alt="Image" />
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+
+              <!-- Portfolio Item Start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="https://t4.ftcdn.net/jpg/02/60/02/37/360_F_260023735_G845APdEtIy7Bfo2CRQbYeo8NBr2uf01.webp" alt="Image" />
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+
+              <!-- Portfolio Item Start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="https://images.ultfone.com/topics/android/android-fastboot-mode.webp" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+
+              <!-- Portfolio Item Start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaIQFEmAlVqx6NxA-f9x-WiFK_PS850TpFj7je-6v7lRW3xzY5OeTcrfWR&s=10" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+
+              <!-- Portfolio Item Start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="https://m.media-amazon.com/images/I/6130kS9PVpL._AC_UF894,1000_QL80_FMwebp_.jpg" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+
+              <!-- Portfolio Item Start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="https://marsner.com/wp-content/uploads/why-custom-software-development.jpeg" alt="image" />
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+            </div>
+          </div>
+        </section>
+        <!-- Service section End -->
+        <!-- Contact section Start -->
+        <section class="contact section" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Contact Me</h2>
+              </div>
+            </div>
+            <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
+            <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+            <div class="row">
+              <!-- Contact Info Item Start -->
+              <div class="contact-info-item padd-15">
+                <div class="icon">
+                  <i class="fa fa-phone"></i>
+                </div>
+                <h4>Call Us On</h4>
+                <p>+91 7592949476</p>
+              </div>
+              <!-- Contact Info Item End -->
+
+              <!-- Contact Info Item Start -->
+              <div class="contact-info-item padd-15">
+                <div class="icon">
+                  <i class="fa fa-map-marker-alt"></i>
+                </div>
+                <h4>Place</h4>
+                <p>Kerala, Malappuram</p>
+              </div>
+              <!-- Contact Info Item End -->
+
+              <!-- Contact Info Item Start -->
+              <div class="contact-info-item padd-15">
+                <div class="icon">
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <h4>Email</h4>
+                <p>sheerbabu549@gmail.com</p>
+              </div>
+              <!-- Contact Info Item End -->
+
+              <!-- Contact Info Item Start -->
+              <div class="contact-info-item padd-15">
+                <div class="icon">
+                  <i class="fa fa-globe-europe"></i>
+                </div>
+                <h4>Website</h4>
+                <p>not present</p>
+              </div>
+              <!-- Contact Info Item End -->
+            </div>
+            <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+            <h4 class="contact-sub-title padd-15">
+              I'M VERY RESPONSIVE TO MESSAGES
+            </h4>
+            <!-- Contact Form -->
+            <div class="row">
+              <div class="contact-form padd-15">
+                <div class="row">
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-controll"
+                        placeholder="Name"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-controll"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-controll"
+                        placeholder="Subject"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <textarea
+                        name=""
+                        id=""
+                        class="form-controll"
+                        placeholder="Message"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <button type="submit" class="btn"
+                    onclick="window.location='https://wa.me/917592949476?text=Hello,%20we%20 are%20hiring%20you!'">Send Message</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact section End -->
+      </div>
+      <!-- Main Content End -->
+    </div>
+
+    <!-- main container end -->
+    <!-- Style Switcher Start -->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+
+      <div class="day-night s-icon">
+        <i class="fas fa-moon"></i>
+      </div>
+      <h4>Theme Colors</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
       </div>
     </div>
-  </div>
-   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-  <script src="https://res.cloudinary.com/saheerbabu/raw/upload/v1/webDevelopment/EasyRecharge/UserSection/htgat87g6zapkbhjzjho.js"></script>
-</body>
+    <!-- Style Switcher End -->
+    <!-- JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/style-switcher.js"></script>
+  </body>
 </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LoginPage</title>
+</head>
+<body>
+    <header class="main-header">
+        <span class="logo"> Brycen's Login Page</span>
+        <span>
+            <nav class="main-nav">
+                <ul>
+                    <li class="home" style="display:none;">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="logged-in" stype="display:none;">
+                        <a href="edit.html">Edit Account</a>
+                    </li>
+                    <li class="logged-out" style="display: none;">
+                        <a href="signup.html">Sign up</a>
+                    </li>
+                    <li class="logged-out" style="display: none;">
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li class="logged-in" style="display: none;">
+                        <a href="#" id="logout">Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </span>
+    </header>
+    <section class="container">
+        <ul class="content">
+            <div class="logged-out" style="display: none;">
+                <h2>Hello!</h2> 
+                <div class="intro">
+                To signup or login, click below or on the navigation bar.
+                </div>
+                <div class="buttons">
+                    <button class="button" onclick="window.location.href='signup.html';">
+                        Sign up
+                    </button>
+                    <button class="button" onclick="window.location.href='login.html';">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </ul>
+    </section>
+    <footer>
+        <div>&copy Brycen Ong 2020</div>
+    </footer>
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCKypOhR-Hw9LxV1k8O7EeGdlXRFR-Ur5Y",
+    authDomain: "login-page-df632.firebaseapp.com",
+    databaseURL: "https://login-page-df632.firebaseio.com",
+    projectId: "login-page-df632",
+    // storageBucket: "login-page-df632.appspot.com",
+    // messagingSenderId: "524776418200",
+    appId: "1:524776418200:web:a36256adfdc785773999ed",
+    measurementId: "G-0Y27NT5MMT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
+<script src="auth.js"></script>
+<!-- <script src="index.js"></script> -->
+</html>
